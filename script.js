@@ -1,13 +1,10 @@
-// Smooth Scrolling Navigation
-document.querySelectorAll('nav a[href^="#"], .hero-btns a[href^="#"]').forEach(link => {
-    link.addEventListener('click', function (e) {
+// 1. Smooth Scrolling for Navigation Links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault();
-
-        const targetId = this.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
-
-        if (targetElement) {
-            targetElement.scrollIntoView({
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
             });
@@ -15,5 +12,36 @@ document.querySelectorAll('nav a[href^="#"], .hero-btns a[href^="#"]').forEach(l
     });
 });
 
-// Log for Debugging
-console.log("Akilan Kirushaliny - Portfolio loaded successfully.");
+// 2. Dynamic Scroll Reveal Animation (Trigger Elements when scrolled into view)
+function revealOnScroll() {
+    const reveals = document.querySelectorAll('.reveal');
+    const windowHeight = window.innerHeight;
+    const revealPoint = 120; // Trigger distance from bottom
+
+    reveals.forEach(element => {
+        const revealTop = element.getBoundingClientRect().top;
+        if (revealTop < windowHeight - revealPoint) {
+            element.classList.add('active');
+        }
+    });
+}
+
+// 3. Parallax Earth Movement on Scroll
+const earthSphere = document.querySelector('.earth-sphere');
+
+window.addEventListener('scroll', () => {
+    revealOnScroll(); // Trigger reveal logic
+    
+    // Parallax background earth scroll
+    const scrollValue = window.scrollY;
+    if (earthSphere) {
+        earthSphere.style.transform = `translateY(${scrollValue * 0.25}px) rotate(${scrollValue * 0.04}deg)`;
+    }
+});
+
+// Trigger once on page load
+window.addEventListener('load', () => {
+    revealOnScroll();
+});
+
+console.log("Portfolio Loaded with Smooth Transitions & Scroll Reveal FX!");
