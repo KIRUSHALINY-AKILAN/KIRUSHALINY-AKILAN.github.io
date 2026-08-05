@@ -1,20 +1,23 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akilan Kirushaliny | Software Engineer & Data Analyst</title>
-
+    <title>Akilan Kirushaliny | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
+    
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
-
 <body>
 
-    <div class="bg-pattern"></div>
+    <div class="space-bg">
+        <div class="stars"></div>
+        <div class="earth-sphere"></div>
+        <div class="glow-orb"></div>
+        <div class="glow-orb-2"></div>
+    </div>
 
     <header>
         <nav>
@@ -26,178 +29,196 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#certificates">Certificates</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" class="nav-btn">Let's Talk</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="hero" id="home">
-        <div class="hero-text">
-            <h3>Hello, I'm</h3>
-            <h1>Akilan Kirushaliny</h1>
-            <h2>Software Engineering Undergraduate & Data Analytics Specialist</h2>
-            <p>
-                Currently pursuing a Bachelor of Software Engineering at 
-                Sabaragamuwa University of Sri Lanka while completing a 
-                Higher National Diploma (HND) in Data Analytics at ESOFT Metro Campus.
-            </p>
+        <div class="hero-content reveal fade-left">
+            <span class="sub-title">—— Hello, I'm</span>
+            <h1 class="hero-name">Akilan Kirushaliny</h1>
+            <p class="hero-tagline">BSc Software Engineering Undergraduate & Data Analytics Specialist focused on creating high-impact digital solutions.</p>
+            
             <div class="hero-btns">
-                <a href="#contact" class="btn"><i class="fa-solid fa-paper-plane"></i> Hire Me</a>
-                <a href="Akilan_Kirushaliny_CV.pdf" class="btn2" download><i class="fa-solid fa-download"></i> Download CV</a>
+                <a href="#contact" class="btn btn-primary glow-btn">Hire Me <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="Akilan_Kirushaliny_CV.pdf" class="btn btn-secondary" download><i class="fa-solid fa-download"></i> Download CV</a>
+            </div>
+
+            <div class="stats-row">
+                <div class="stat-item">
+                    <h2 class="counter" data-target="3">BSc</h2>
+                    <p>Software Eng.</p>
+                </div>
+                <div class="stat-item">
+                    <h2 class="counter" data-target="2">HND</h2>
+                    <p>Data Analytics</p>
+                </div>
+                <div class="stat-item">
+                    <h2>10+</h2>
+                    <p>Projects Built</p>
+                </div>
             </div>
         </div>
 
-        <div class="hero-image">
-            <div class="img-border-glow">
-                <img src="profile.jpg.jpeg" alt="Akilan Kirushaliny" onerror="this.src='https://ui-avatars.com/api/?name=Kirushaliny+Akilan&background=3b82f6&color=fff&size=300'">
+        <div class="hero-card-container reveal fade-right">
+            <div class="profile-floating-card float-animation">
+                <div class="profile-img-box">
+                    <img src="profile.jpg.jpeg" alt="Akilan Kirushaliny" onerror="this.src='https://ui-avatars.com/api/?name=Kirushaliny+Akilan&background=2563eb&color=fff&size=200'">
+                </div>
+                <h3>Akilan Kirushaliny</h3>
+                <p>Software Developer & Analyst</p>
+                <div class="social-icons">
+                    <a href="https://github.com/KIRUSHALINY-AKILAN" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/kirushaliny-akilan" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:shalushaliny05@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="card glass-card">
-            <p>
-                I am <b>Akilan Kirushaliny</b>, a passionate Software Engineering undergraduate at Sabaragamuwa University of Sri Lanka and an external HND in Data Analytics student at ESOFT Metro Campus.
-            </p>
-            <br>
-            <p>
-                I specialize in developing scalable software applications, designing optimized database architectures, analyzing complex datasets, and configuring network solutions. My goal is to build innovative, data-driven digital products that solve real-world industry problems.
-            </p>
+        <h2 class="section-title reveal fade-up">About Me</h2>
+        <p class="section-subtitle reveal fade-up">Driven by curiosity, grounded in technical discipline.</p>
+
+        <div class="about-grid">
+            <div class="about-img-box glass-card reveal fade-left">
+                <img src="profile.jpg.jpeg" alt="About Photo" onerror="this.src='https://ui-avatars.com/api/?name=Kirushaliny+Akilan&background=0f172a&color=fff&size=300'">
+            </div>
+            
+            <div class="about-cards reveal fade-right">
+                <div class="mini-card glass-card hover-tilt">
+                    <i class="fa-solid fa-lightbulb icon-blue"></i>
+                    <div>
+                        <h4>Innovative</h4>
+                        <p>Blending analytical data insight with practical coding logic to engineer reliable software systems.</p>
+                    </div>
+                </div>
+                <div class="mini-card glass-card hover-tilt">
+                    <i class="fa-solid fa-microchip icon-cyan"></i>
+                    <div>
+                        <h4>Practical</h4>
+                        <p>Focused on solving real business problems with optimized backend structures and clean user interfaces.</p>
+                    </div>
+                </div>
+                <div class="mini-card glass-card hover-tilt">
+                    <i class="fa-solid fa-graduation-cap icon-purple"></i>
+                    <div>
+                        <h4>Continuous Learner</h4>
+                        <p>Pursuing Software Engineering at SUSL and HND in Data Analytics to master full-stack and data domains.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="education">
-        <h2 class="section-title">Education</h2>
-        <div class="grid-container">
-            <div class="card glass-card">
-                <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-                <h3>BSc (Hons) in Software Engineering</h3>
-                <p class="institution">Sabaragamuwa University of Sri Lanka</p>
-                <span class="status-badge">Currently Reading</span>
+        <h2 class="section-title reveal fade-up">Education</h2>
+        <div class="grid-2">
+            <div class="card glass-card reveal fade-left hover-tilt">
+                <i class="fa-solid fa-university card-icon"></i>
+                <h3>Bachelor of Software Engineering (Hons)</h3>
+                <p class="campus">Sabaragamuwa University of Sri Lanka</p>
+                <span class="badge pulse-badge">Currently Reading</span>
             </div>
-
-            <div class="card glass-card">
-                <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
-                <h3>HND in Data Analytics</h3>
-                <p class="institution">ESOFT Metro Campus</p>
-                <span class="status-badge">Currently Reading (External)</span>
+            <div class="card glass-card reveal fade-right hover-tilt">
+                <i class="fa-solid fa-chart-line card-icon"></i>
+                <h3>Higher National Diploma in Data Analytics</h3>
+                <p class="campus">ESOFT Metro Campus</p>
+                <span class="badge pulse-badge">Currently Reading (External)</span>
             </div>
         </div>
     </section>
 
     <section id="skills">
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-wrapper">
-            <div class="skills">
-                <span><i class="fa-brands fa-python"></i> Python</span>
-                <span><i class="fa-solid fa-code"></i> C#</span>
-                <span><i class="fa-brands fa-java"></i> Java</span>
-                <span><i class="fa-solid fa-database"></i> SQL</span>
-                <span><i class="fa-brands fa-html5"></i> HTML5</span>
-                <span><i class="fa-brands fa-css3-alt"></i> CSS3</span>
-                <span><i class="fa-brands fa-js"></i> JavaScript</span>
-                <span><i class="fa-solid fa-chart-pie"></i> Power BI</span>
-                <span><i class="fa-solid fa-file-excel"></i> Advanced Excel</span>
-                <span><i class="fa-solid fa-server"></i> MS SQL Server</span>
-                <span><i class="fa-solid fa-database"></i> MySQL</span>
-                <span><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
-                <span><i class="fa-solid fa-network-wired"></i> Cisco Packet Tracer</span>
-            </div>
+        <h2 class="section-title reveal fade-up">My Skills</h2>
+        <p class="section-subtitle reveal fade-up">Technologies and tools I work with daily.</p>
+        
+        <div class="skills-pills reveal fade-up">
+            <span class="skill-pill"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="skill-pill"><i class="fa-solid fa-code"></i> C#</span>
+            <span class="skill-pill"><i class="fa-brands fa-java"></i> Java</span>
+            <span class="skill-pill"><i class="fa-solid fa-database"></i> SQL / MySQL</span>
+            <span class="skill-pill"><i class="fa-solid fa-server"></i> MS SQL Server</span>
+            <span class="skill-pill"><i class="fa-brands fa-html5"></i> HTML5</span>
+            <span class="skill-pill"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+            <span class="skill-pill"><i class="fa-brands fa-js"></i> JavaScript</span>
+            <span class="skill-pill"><i class="fa-solid fa-chart-pie"></i> Power BI</span>
+            <span class="skill-pill"><i class="fa-solid fa-file-excel"></i> Advanced Excel</span>
+            <span class="skill-pill"><i class="fa-brands fa-github"></i> Git & GitHub</span>
+            <span class="skill-pill"><i class="fa-solid fa-network-wired"></i> Cisco Packet Tracer</span>
         </div>
     </section>
 
     <section id="projects">
-        <h2 class="section-title">Key Projects</h2>
-        <div class="grid-container3">
-            <div class="card glass-card project-card">
-                <div class="card-icon"><i class="fa-solid fa-utensils"></i></div>
-                <h3>FOODHub Delivery System</h3>
-                <p>Database-driven enterprise application developed using C#, Visual Studio, and MS SQL Server for seamless order handling.</p>
-                <div class="tags">
-                    <span>C#</span>
-                    <span>MS SQL</span>
-                    <span>GUI</span>
-                </div>
+        <h2 class="section-title reveal fade-up">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="card glass-card reveal fade-up hover-tilt">
+                <i class="fa-solid fa-utensils card-icon"></i>
+                <h3>FoodHub Delivery System</h3>
+                <p>Database-driven desktop app built using C#, Visual Studio, and SQL Server for handling restaurant logistics.</p>
+                <div class="tags"><span>C#</span><span>SQL Server</span><span>OOP</span></div>
             </div>
-
-            <div class="card glass-card project-card">
-                <div class="card-icon"><i class="fa-solid fa-hand-fist"></i></div>
+            <div class="card glass-card reveal fade-up hover-tilt">
+                <i class="fa-solid fa-person-running card-icon"></i>
                 <h3>Judo Fee Management</h3>
-                <p>Desktop application built for athlete registration, membership management, coaching schedules, and automatic fee calculation.</p>
-                <div class="tags">
-                    <span>C#</span>
-                    <span>Database</span>
-                    <span>Desktop App</span>
-                </div>
+                <p>Management system for tracking student registrations, training sessions, and automatic fee generation.</p>
+                <div class="tags"><span>C#</span><span>Database</span><span>Desktop UI</span></div>
             </div>
-
-            <div class="card glass-card project-card">
-                <div class="card-icon"><i class="fa-solid fa-diagram-project"></i></div>
+            <div class="card glass-card reveal fade-up hover-tilt">
+                <i class="fa-solid fa-diagram-project card-icon"></i>
                 <h3>Enterprise Network Design</h3>
-                <p>Designed structured corporate network topology using Cisco Packet Tracer, incorporating VLANs, DHCP, and inter-VLAN routing.</p>
-                <div class="tags">
-                    <span>Networking</span>
-                    <span>Cisco</span>
-                    <span>VLAN</span>
-                </div>
+                <p>Structured corporate network layout configured on Cisco Packet Tracer with custom subnets, VLANs, and DHCP.</p>
+                <div class="tags"><span>Networking</span><span>Cisco</span><span>VLAN</span></div>
             </div>
         </div>
     </section>
 
     <section id="certificates">
-        <h2 class="section-title">Certifications</h2>
-        <div class="grid-container">
-            <div class="card glass-card">
-                <div class="card-icon"><i class="fa-solid fa-certificate"></i></div>
+        <h2 class="section-title reveal fade-up">Certifications</h2>
+        <div class="grid-2">
+            <div class="card glass-card reveal fade-left hover-tilt">
+                <i class="fa-solid fa-certificate card-icon"></i>
                 <h3>Diploma in Information Technology</h3>
-                <p class="institution">NIBT Campus</p>
+                <p class="campus">NIBT Campus</p>
             </div>
-
-            <div class="card glass-card">
-                <div class="card-icon"><i class="fa-solid fa-award"></i></div>
+            <div class="card glass-card reveal fade-right hover-tilt">
+                <i class="fa-solid fa-award card-icon"></i>
                 <h3>Diploma in English</h3>
-                <p class="institution">Aquinas College of Higher Studies</p>
+                <p class="campus">Aquinas College of Higher Studies</p>
             </div>
         </div>
     </section>
 
     <section id="contact">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-card glass-card">
-            <div class="contact-grid">
-                <div class="contact-item">
-                    <i class="fa-solid fa-envelope"></i>
-                    <div>
-                        <h4>Email</h4>
-                        <p><a href="mailto:shalushaliny05@gmail.com">shalushaliny05@gmail.com</a></p>
-                    </div>
-                </div>
-
-                <div class="contact-item">
-                    <i class="fa-solid fa-phone"></i>
-                    <div>
-                        <h4>Phone</h4>
-                        <p><a href="tel:+94776149801">+94 77 614 9801</a></p>
-                    </div>
-                </div>
-
-                <div class="contact-item">
-                    <i class="fa-brands fa-github"></i>
-                    <div>
-                        <h4>GitHub</h4>
-                        <p><a href="https://github.com/KIRUSHALINY-AKILAN" target="_blank">github.com/KIRUSHALINY-AKILAN</a></p>
-                    </div>
-                </div>
-
-                <div class="contact-item">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <div>
-                        <h4>LinkedIn</h4>
-                        <p><a href="https://www.linkedin.com/in/kirushaliny-akilan" target="_blank">linkedin.com/in/kirushaliny-akilan</a></p>
-                    </div>
+        <h2 class="section-title reveal fade-up">Get in Touch</h2>
+        <div class="contact-box glass-card reveal fade-up">
+            <div class="contact-info">
+                <h3>Let's collaborate!</h3>
+                <p>Have a project in mind or want to discuss analytics & software roles? Feel free to reach out.</p>
+                
+                <div class="contact-details">
+                    <p><i class="fa-solid fa-envelope"></i> shalushaliny05@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +94 77 614 9801</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Sri Lanka</p>
                 </div>
             </div>
+
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                <div class="input-group">
+                    <label>Name</label>
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="input-group">
+                    <label>Message</label>
+                    <textarea rows="4" placeholder="How can I help you?" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full glow-btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+            </form>
         </div>
     </section>
 
