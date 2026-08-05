@@ -1,16 +1,19 @@
-// Smooth scrolling effect
-document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', function(e) {
+// Smooth Scrolling Navigation
+document.querySelectorAll('nav a[href^="#"], .hero-btns a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function (e) {
         e.preventDefault();
 
-        const target = document.querySelector(this.getAttribute('href'));
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
 
-        if(target){
-            target.scrollIntoView({
-                behavior: 'smooth'
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
             });
         }
     });
 });
 
-console.log("Portfolio Loaded Successfully");
+// Log for Debugging
+console.log("Akilan Kirushaliny - Portfolio loaded successfully.");
